@@ -5,20 +5,20 @@
 class Tokenmanager < Formula
   desc "Terminal dashboard for AI coding agent token usage and spend"
   homepage "https://github.com/ht2803-max/tokenmanager"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ht2803-max/tokenmanager/releases/download/v0.3.0/tokenmanager_0.3.0_darwin_amd64.tar.gz"
-      sha256 "511facc16a6d65f725a1f8824f9747e55b1e0a279aa71c4e2c589da7b42e3024"
+      url "https://github.com/ht2803-max/tokenmanager/releases/download/v0.3.1/tokenmanager_0.3.1_darwin_amd64.tar.gz"
+      sha256 "8477153ff402a880d552cbf48259fbd9d3ac0e941b8dc4cad955de4d2f1c3143"
 
       define_method(:install) do
         bin.install "tokenmanager"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ht2803-max/tokenmanager/releases/download/v0.3.0/tokenmanager_0.3.0_darwin_arm64.tar.gz"
-      sha256 "133a587caf6b3c913106b47f0b1650f8bbdd58eb72fdd502cd7010cab000ee2f"
+      url "https://github.com/ht2803-max/tokenmanager/releases/download/v0.3.1/tokenmanager_0.3.1_darwin_arm64.tar.gz"
+      sha256 "d097f249b400c0d4f7d1b3f51d6705e221a98f4e3fb66e35ac86c248454b8f33"
 
       define_method(:install) do
         bin.install "tokenmanager"
@@ -28,15 +28,15 @@ class Tokenmanager < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ht2803-max/tokenmanager/releases/download/v0.3.0/tokenmanager_0.3.0_linux_amd64.tar.gz"
-      sha256 "1d53cfb6e5ab0a1ed7a3ede3a4f9217248cde13d1178107ff009aaac96319b7b"
+      url "https://github.com/ht2803-max/tokenmanager/releases/download/v0.3.1/tokenmanager_0.3.1_linux_amd64.tar.gz"
+      sha256 "fb4686fd8f0541045ff11c2c0474bd827fd2096973b43c55388292f196eba3d0"
       define_method(:install) do
         bin.install "tokenmanager"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ht2803-max/tokenmanager/releases/download/v0.3.0/tokenmanager_0.3.0_linux_arm64.tar.gz"
-      sha256 "69aa86979882a487c69bb68d2900ab8dbcf040c6f0cc5d0beb78f4e309bee254"
+      url "https://github.com/ht2803-max/tokenmanager/releases/download/v0.3.1/tokenmanager_0.3.1_linux_arm64.tar.gz"
+      sha256 "ccabdda3e585f30e532c40168e81c024918532d83b2a1626a7f0d882adb2efa2"
       define_method(:install) do
         bin.install "tokenmanager"
       end
